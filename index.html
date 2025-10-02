@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ООО Логос-VL - Юридическая поддержка строительных организаций</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-blue: #1a5276;
-            --secondary-blue: #3498db;
-            --light-blue: #ebf5fb;
-            --accent-blue: #2e86c1;
+            --primary-blue: #0A2E5C;
+            --accent-gold: #D4AF37;
+            --light-bg: #F8F9FA;
             --dark-text: #2c3e50;
             --light-text: #7f8c8d;
             --white: #ffffff;
@@ -33,8 +32,8 @@
         }
 
         h1, h2, h3, h4 {
-            font-family: 'Nunito', sans-serif;
-            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
             margin-bottom: 1rem;
             color: var(--primary-blue);
         }
@@ -57,22 +56,22 @@
 
         .btn {
             display: inline-block;
-            background-color: var(--secondary-blue);
+            background-color: var(--primary-blue);
             color: var(--white);
-            padding: 12px 30px;
-            border-radius: 50px;
+            padding: 14px 32px;
+            border-radius: 8px;
             font-weight: 600;
             transition: var(--transition);
-            box-shadow: var(--shadow);
+            box-shadow: 0 4px 12px rgba(10, 46, 92, 0.2);
             border: none;
             cursor: pointer;
             font-size: 1rem;
         }
 
         .btn:hover {
-            background-color: var(--primary-blue);
+            background-color: var(--accent-gold);
             transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 16px rgba(10, 46, 92, 0.3);
         }
 
         section {
@@ -103,7 +102,7 @@
         }
 
         .logo {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 1.8rem;
             color: var(--primary-blue);
             font-weight: 700;
@@ -113,7 +112,7 @@
 
         .logo i {
             margin-right: 10px;
-            color: var(--secondary-blue);
+            color: var(--accent-gold);
         }
 
         .nav-menu {
@@ -138,12 +137,12 @@
             height: 2px;
             bottom: -5px;
             left: 0;
-            background-color: var(--secondary-blue);
+            background-color: var(--accent-gold);
             transition: var(--transition);
         }
 
         .nav-menu a:hover {
-            color: var(--secondary-blue);
+            color: var(--accent-gold);
         }
 
         .nav-menu a:hover:after {
@@ -168,14 +167,14 @@
         }
 
         .hero-content h1 {
-            font-size: 3.5rem;
+            font-size: 40px;
             margin-bottom: 1.5rem;
             color: var(--white);
             animation: fadeInDown 1s ease;
         }
 
         .hero-content p {
-            font-size: 1.5rem;
+            font-size: 18px;
             margin-bottom: 2.5rem;
             max-width: 700px;
             margin-left: auto;
@@ -189,7 +188,7 @@
 
         /* О компании */
         .about {
-            background-color: var(--white);
+            background-color: var(--light-bg);
         }
 
         .about-content {
@@ -228,7 +227,7 @@
 
         /* Услуги */
         .services {
-            background-color: var(--light-blue);
+            background-color: var(--light-bg);
         }
 
         .services-grid {
@@ -254,7 +253,7 @@
 
         .service-icon {
             font-size: 3rem;
-            color: var(--secondary-blue);
+            color: var(--accent-gold);
             margin-bottom: 1.5rem;
         }
 
@@ -306,7 +305,7 @@
 
         .contact-details i {
             margin-right: 10px;
-            color: var(--secondary-blue);
+            color: var(--accent-gold);
             width: 20px;
         }
 
@@ -348,7 +347,7 @@
         }
 
         .footer-logo {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 2rem;
             margin-bottom: 1.5rem;
         }
@@ -393,6 +392,31 @@
             color: rgba(255, 255, 255, 0.7);
         }
 
+        /* CTA-секция */
+        .cta-section {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 60px 0;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-microcopy {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
         /* Анимации */
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -424,11 +448,15 @@
         /* Адаптивность */
         @media (max-width: 992px) {
             .hero-content h1 {
-                font-size: 2.8rem;
+                font-size: 28px;
             }
-            
+
             .hero-content p {
-                font-size: 1.3rem;
+                font-size: 16px;
+            }
+
+            .cta-content h2 {
+                font-size: 2rem;
             }
         }
 
@@ -461,38 +489,67 @@
             }
 
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 28px;
             }
-            
+
             .hero-content p {
-                font-size: 1.1rem;
+                font-size: 16px;
+            }
+
+            .cta-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .cta-content p {
+                font-size: 1rem;
             }
 
             .about-text {
                 padding-right: 0;
                 margin-bottom: 2rem;
             }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                flex-direction: column;
+            }
         }
 
         @media (max-width: 576px) {
             section {
-                padding: 60px 0;
+                padding: 50px 0;
             }
 
             .hero-content h1 {
-                font-size: 2rem;
+                font-size: 24px;
             }
-            
+
             .hero-content p {
-                font-size: 1rem;
+                font-size: 14px;
+            }
+
+            .cta-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .cta-content p {
+                font-size: 0.9rem;
             }
 
             .btn {
-                padding: 10px 25px;
+                padding: 12px 24px;
+                font-size: 0.9rem;
             }
 
             .service-card {
                 padding: 2rem 1.5rem;
+            }
+
+            .cta-section {
+                padding: 40px 0;
             }
         }
     </style>
@@ -606,6 +663,18 @@
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3727899242266!2d37.61729931593047!3d55.75582668055308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f527151!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1617702662934!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Повторяющийся CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Готовы начать сотрудничество?</h2>
+                <p>Получите профессиональную юридическую консультацию уже сегодня</p>
+                <a href="#contact" class="btn">Получить консультацию</a>
+                <p class="cta-microcopy">Бесплатно, без обязательств</p>
             </div>
         </div>
     </section>
